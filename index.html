@@ -87,13 +87,18 @@
         .navbar.scrolled {
             background: rgba(10, 14, 39, 0.95);
             box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+            padding: 0;
+            /* Ensures it stays compact */
         }
 
         .nav-wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.5rem 0;
+            padding: 1rem 0;
+            /* Reduced from 1.5rem to 1rem */
+            height: 70px;
+            /* Fixed height for consistency */
         }
 
         .logo h2 {
@@ -1715,7 +1720,8 @@
             /* Navigation */
             .nav-menu {
                 position: fixed;
-                top: 80px;
+                top: 70px;
+                /* Match new navbar height */
                 left: -100%;
                 width: 100%;
                 background: rgba(10, 14, 39, 0.98);
@@ -1723,7 +1729,7 @@
                 flex-direction: column;
                 padding: 2rem;
                 transition: var(--transition);
-                height: calc(100vh - 80px);
+                height: calc(100vh - 70px);
                 border-right: 1px solid var(--border-color);
                 z-index: 999;
             }
